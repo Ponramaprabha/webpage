@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio Resume</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    nav {
+      background: #34495e;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: #ecf0f1;
+    }
+
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid #34495e;
+      object-fit: cover;
+    }
+
+    header h1 {
+      margin: 15px 0 5px;
+      font-size: 2rem;
+    }
+
+    header p {
+      font-size: 1rem;
+      color: #666;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    section {
+      background: white;
+      padding: 30px;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    section h2 {
+      color: #2c3e50;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #3498db;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .skills .bar {
+      height: 10px;
+      background: #ddd;
+      margin-top: 5px;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .skills .fill {
+      height: 10px;
+      background: #3498db;
+      width: 0;
+      animation: fillBar 2s ease forwards;
+    }
+
+    @keyframes fillBar {
+      to { width: var(--width); }
+    }
+
+    footer {
+      text-align: center;
+      background: #34495e;
+      color: white;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+      nav ul li {
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#About Me">About Me</a></li>
+      <li><a href="#Education">Education</a></li>
+      <li><a href="#Languages">Languages</a></li>
+      <li><a href="#Skills">Skills</a></li>
+      <li><a href="#Hobbies">Hobbies</a></li>
+      <li><a href="#Work Experience">Work Experience</a></li>
+      <li><a href="#Contact Us">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <img src="asian-businessman-working-laptop-office-600nw-2178081633.webp" alt="Profile Picture">
+    <h1>Ponramaprabha.P</h1>
+    <p>Frontend Developer | Creative Thinker | Team Worker | UX/UI designer</p>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am a designer, creative thinker, and team worker. I enjoy bringing visual ideas to life and collaborating with others to create beautiful and effective designs. With a strong sense of creativity and attention to detail, I aim to deliver high-quality work that communicates clearly and stands out.</p>
+</section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>BTech Information Technology</strong> - Anna University (2023–2027)</li>
+        <li><strong>P.A.C.R.Ammani Ammal's girls' Higher Secondary School </strong> -  High School (2021–2023)</li>
+      </ul>
+    </section>
+
+    <section id="languages">
+      <h2>Languages</h2>
+      <ul>
+        <li>English – Intermediate</li>
+        <li>Tamil – Fluent</li>
+        <li>Hindi – Basic</li>
+      </ul>
+    </section>
+
+    <section id="skills" class="skills">
+      <h2>Skills</h2>
+      <p>HTML</p>
+      <div class="bar"><div class="fill" style="--width: 70%;"></div></div>
+      <p>CSS</p>
+      <div class="bar"><div class="fill" style="--width: 95%;"></div></div>
+      <p>JavaScript</p>
+      <div class="bar"><div class="fill" style="--width: 60%;"></div></div>
+      <p>React</p>
+      <div class="bar"><div class="fill" style="--width: 40%;"></div></div>
+    </section>
+
+    <section id="hobbies">
+      <h2>Hobbies</h2>
+      <ul>
+        <li>Photography</li>
+        <li>Blogging</li>
+        <li>Traveling</li>
+        <li>Coding challenges</li>
+      </ul>
+    </section>
+
+    <section id="experience">
+      <h2>Work Experience</h2>
+      <ul>
+        <li><strong>Frontend Developer</strong> - Tech (2025–Present)  
+          <br/> Fresher Developed responsive websites and collaborated with design teams for optimal UX.
+        </li>
+        <li><strong>Web Intern</strong> -  Studio (Present)  
+          <br/>Assisted in frontend tasks and contributed to project testing and deployment.
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Email: p.a.prabha5713@gmail.com</p>
+      <p>Phone: +91 9443445375</p>
+      <p>LinkedIn: linkedin.com/in/prabha</p>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 @ prabha. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
